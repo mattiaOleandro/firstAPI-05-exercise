@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "1c0b7edc-7653-4a95-8745-a6284696f297",
+		"name": "Frist API 05 Exercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21617836"
+	},
+	"item": [
+		{
+			"name": "getNewCar",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "postNewCar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"OA2M-I2N5\",\r\n    \"modelName\": \"Fiat Panta\",\r\n    \"price\": 6999.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cars/postNewCar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars",
+						"postNewCar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "erratePostRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cars/postNewCar",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cars",
+						"postNewCar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
